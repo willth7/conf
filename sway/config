@@ -12,10 +12,11 @@ set $port_monitor 'DP-1'
 exec brightnessctl s 24
 exec swayidle before-sleep $lock
 
-output $laptop position 1920 0 resolution 3840x2160 bg ~/pics/phone/IMG_7115.bmp fill scale 2
-output $port_monitor position 0 0 resolution 1920x1080 bg ~/pics/phone/IMG_7115.bmp fill scale 1
+output $laptop position 1920 0 resolution 3840x2160 bg ~/pics/sunset.bmp fill scale 2
+output $port_monitor position 0 0 resolution 1920x1080 bg ~/pics/dusk.bmp fill scale 1
 
 bindsym $mod+Return exec $term
+bindsym $mod+Backspace exec firefox
 bindsym $mod+w kill
 bindsym $mod+escape exec $lock
 bindsym Print exec grim ~/pics/screenshots/$(date +'%a_%b_%d_%y_%T.png')
