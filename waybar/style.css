@@ -10,7 +10,7 @@
 window#waybar {
     background-color: #101010;
     border-bottom: none;
-    color: #bba88d;
+    color: #cfb99a;
     transition-property: background-color;
     transition-duration: 0.5s;
 }
@@ -21,7 +21,7 @@ window#waybar.hidden {
 
 #workspaces button {
     padding: 0 5px;
-    color: #bba88d;
+    color: #cfb99a;
     border-radius: 5px;
 }
 
@@ -34,8 +34,8 @@ window#waybar.hidden {
 }
 
 #workspaces button.focused {
-    background-color: #bba88d;
-    color: #282828;
+    background-color: #cfb99a;
+    color: #303030;
     border-bottom: none;
     border-radius: 5px;
 }
@@ -46,7 +46,7 @@ window#waybar.hidden {
 
 #mode {
     background-color: #64727d;
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 3px solid #e0d0bb;
 }
 
 #clock,
@@ -59,27 +59,27 @@ window#waybar.hidden {
 #mpd {
     padding: 0 14px;
     margin: 0 0px;
-    color: #ffffff;
+    color: #e0d0bb;
 }
 
 #clock {
-    color: #000000;
-    background-color: #bba88d;
+    color: #101010;
+    background-color: #cfb99a;
 }
 
 #battery {
-    background-color: #bba88d;
-    color: #000000;
+    background-color: #cfb99a;
+    color: #101010;
 }
 
 #battery.charging {
-    color: #000000;
-    background-color: #bba88d;
+    color: #101010;
+    background-color: #cfb99a;
 }
 
 @keyframes blink {
     to {
-        background-color: #bba88d;
+        background-color: #cfb99a;
         color: #101010;
     }
 }
@@ -95,50 +95,50 @@ window#waybar.hidden {
 }
 
 label:focus {
-    background-color: #000000;
+    background-color: #101010;
 }
 
 #backlight {
-    background-color: #bba88d;
-    color: #000000;
+    background-color: #cfb99a;
+    color: #101010;
 }
 
 #network {
-    background-color: #bba88d;
-    color: #000000;
+    background-color: #cfb99a;
+    color: #101010;
 }
 
 #network.disconnected {
-    background-color: #bba88d;
+    background-color: #cfb99a;
 }
 
 #bluetooth {
-	background-color: #bba88d;
-	color: #000000;
+	background-color: #cfb99a;
+	color: #101010;
 }
 
 #pulseaudio {
-    background-color: #bba88d;
-    color: #000000;
+    background-color: #cfb99a;
+    color: #101010;
     border-radius: 5px 0px 0px 5px;
 }
 
 #pulseaudio.muted {
-    background-color: #bba88d;
-    color: #000000;
+    background-color: #cfb99a;
+    color: #101010;
 }
 
 #idle_inhibitor {
     background-color: rgba(0, 0, 0, 0);
-    color: #bba88d;
+    color: #cfb99a;
     border-radius: 5px;
     margin-right: 2px;
     margin-left: 3px;
 }
 
 #idle_inhibitor.activated {
-    background-color: #bba88d;
-    color: #282828;
+    background-color: #cfb99a;
+    color: #303030;
     border-radius: 5px;
     margin-right: 2px;
     margin-left: 5px;

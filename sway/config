@@ -3,7 +3,7 @@ set $mod Mod1
 # Home row direction keys, like vim
 
 set $term kitty --single-instance
-set $lock 'swaylock -i ~/pics/phone/IMG_7115.bmp --indicator-thickness 7 --ring-color bba88d --key-hl-color 101010 --line-color 000000 --inside-color 000000'
+set $lock 'swaylock -i ~/.sway/bg.bmp --indicator-thickness 7 --ring-color cfb99a --key-hl-color 101010 --line-color 101010 --inside-color 101010'
 
 
 set $laptop 'eDP-1'
@@ -12,8 +12,8 @@ set $port_monitor 'DP-1'
 exec brightnessctl s 24
 exec swayidle before-sleep $lock
 
-output $laptop position 1920 0 resolution 3840x2160 bg ~/pics/sunset.bmp fill scale 2
-output $port_monitor position 0 0 resolution 1920x1080 bg ~/pics/dusk.bmp fill scale 1
+output $laptop position 1920 0 resolution 3840x2160 bg ~/.sway/bg.bmp fill scale 2
+output $port_monitor position 0 0 resolution 1920x1080 bg ~/.sway/bg.bmp fill scale 1
 
 bindsym $mod+Return exec $term
 bindsym $mod+Backspace exec firefox
@@ -138,7 +138,7 @@ exec systemctl --user import-environment WAYLAND_DISPLAY &
 exec wl-paste -t text --watch clipman store
 
 
-client.focused #bba88d #bba88d #bba88d #bba88d #bba88d
+client.focused #cfb99a #cfb99a #cfb99a #cfb99a #cfb99a
 client.unfocused #101010 #101010 #101010 #101010 #101010
 client.focused_inactive #101010 #101010 #101010 #101010 #101010
 
