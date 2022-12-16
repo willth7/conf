@@ -11,33 +11,26 @@ window#waybar {
     background-color: #101010;
     border-bottom: none;
     color: #cfb99a;
-    transition-property: background-color;
+    transition-property: none;
     transition-duration: 0.5s;
-}
-
-window#waybar.hidden {
-    opacity: 0.2;
 }
 
 #workspaces button {
     padding: 0 5px;
     color: #cfb99a;
-    border-radius: 5px;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+	color: #101010;
+	background-color: #cfb99a;
     box-shadow: inherit;
     border-bottom: none;
-    border-radius: 5px;
 }
 
 #workspaces button.focused {
     background-color: #cfb99a;
-    color: #303030;
+    color: #101010;
     border-bottom: none;
-    border-radius: 5px;
 }
 
 #workspaces button.urgent {
@@ -120,7 +113,6 @@ label:focus {
 #pulseaudio {
     background-color: #cfb99a;
     color: #101010;
-    border-radius: 5px 0px 0px 5px;
 }
 
 #pulseaudio.muted {
@@ -131,15 +123,13 @@ label:focus {
 #idle_inhibitor {
     background-color: rgba(0, 0, 0, 0);
     color: #cfb99a;
-    border-radius: 5px;
     margin-right: 2px;
     margin-left: 3px;
 }
 
 #idle_inhibitor.activated {
     background-color: #cfb99a;
-    color: #303030;
-    border-radius: 5px;
+    color: #101010;
     margin-right: 2px;
     margin-left: 5px;
 }

@@ -16,7 +16,7 @@ output $laptop position 1920 0 resolution 3840x2160 bg ~/.sway/bg.bmp fill scale
 output $port_monitor position 0 0 resolution 1920x1080 bg ~/.sway/bg.bmp fill scale 1
 
 bindsym $mod+Return exec $term
-bindsym $mod+Backspace exec firefox
+bindsym $mod+Backspace exec MOZ_ENABLE_WAYLAND=1 firefox
 bindsym $mod+w kill
 bindsym $mod+escape exec $lock
 bindsym Print exec grim ~/pics/screenshots/$(date +'%a_%b_%d_%y_%T.png')
@@ -131,14 +131,14 @@ gaps outer -10
 gaps bottom 1
 gaps top 1
 
-xwayland disable
+xwayland enable
 
 exec waybar &
 exec systemctl --user import-environment WAYLAND_DISPLAY &
 exec wl-paste -t text --watch clipman store
 
 
-client.focused #cfb99a #cfb99a #cfb99a #cfb99a #cfb99a
+client.focused #101010 #101010 #101010 #101010 #101010
 client.unfocused #101010 #101010 #101010 #101010 #101010
 client.focused_inactive #101010 #101010 #101010 #101010 #101010
 
